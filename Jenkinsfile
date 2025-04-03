@@ -49,7 +49,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'DockerHub-Credential', toolName: 'docker') {
-                        sh "docker build -t awanmbandi/adservice:latest ."
+                        sh "docker build -t koladams/adservice:latest ."
                     }
                 }
             }
