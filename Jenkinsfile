@@ -41,7 +41,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'DockerHub-Credential', toolName: 'docker') {
-                        sh "docker build -t awanmbandi/cartservice:latest ./src"
+                        sh "docker build -t koladams/cartservice:latest ./src"
                     }
                 }
             }
