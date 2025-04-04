@@ -41,7 +41,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'DockerHub-Credential', toolName: 'docker') {
-                        sh "docker build -t awanmbandi/paymentservice:latest ."
+                        sh "docker build -t koladams/paymentservice:latest ."
                     }
                 }
             }
